@@ -3,8 +3,9 @@ import LoginForm from "./components/LoginForm";
 import TwitterMessage from "./components/TwitterMessage";
 
 class App extends Component {
-
-  login = ({ username, password }) => {
+  login = ({ username, password }, e) => {
+    e.preventDefault()
+    // debugger
     console.log(`Logging in ${username} with password ${password}`);
   };
 
